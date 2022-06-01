@@ -14,7 +14,7 @@ import com.cursoUdemy.hrpayroll.service.PaymentService;
 @RestController
 @RequestMapping(value = "/payments")
 public class PaymentController {
-	
+
 	@Autowired
 	private PaymentService paymentService;
 	
