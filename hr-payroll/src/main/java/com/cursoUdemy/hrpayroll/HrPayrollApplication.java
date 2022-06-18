@@ -6,9 +6,9 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableCircuitBreaker
+@EnableCircuitBreaker //config de tolerancia a falhas 
 @EnableEurekaClient
-@EnableFeignClients
+@EnableFeignClients //config de comuinicacao entre as aplicacoes
 @SpringBootApplication
 public class HrPayrollApplication {
 

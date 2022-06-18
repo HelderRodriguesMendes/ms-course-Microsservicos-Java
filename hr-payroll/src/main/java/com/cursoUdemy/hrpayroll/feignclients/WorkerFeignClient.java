@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.cursoUdemy.hrpayroll.model.Worker;
 
+//configurando a comunicacao com o projeto worker
 
 @Component
 @FeignClient(name = "hr-worker", path ="/workers")
