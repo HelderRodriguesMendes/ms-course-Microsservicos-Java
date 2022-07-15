@@ -36,6 +36,12 @@ public class WorkerController {
 	
 	@GetMapping(value = "/getById/{id}")
 	public ResponseEntity<Worker> getById(@PathVariable Long id){
+		try {
+			Thread.sleep(3000L);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		return  new ResponseEntity<>(workerService.getById(id), HttpStatus.OK);
 	}
